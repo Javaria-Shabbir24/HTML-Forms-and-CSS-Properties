@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .bodyy{
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+         background-color: rgb(228, 196, 188);
+         border-radius: 10px ;
+         padding: 20px;
+         margin: 70px ;
+         width:40%;
+         text-align: left;
+         justify-content: center;
+        }
+        .container h1{
+            font-size: large;
+            color: red;
+            
+        }
+        .table{
+            font-size: small;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        input.dark::placeholder{
+            color: black;
+        }
+        .b, .Y{
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body class="bodyy" >
+    <div class="container" >
+    <form >
+        <h1 class="Y">Continental Hotel Reservation Form</h1>
+        <table class="table">
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Name</td>
+                <td style="border: 1px solid black"; colspan="5"><input type="text" placeholder ="Enter your name " size="40%"> </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black"; colspan="4">eMail</td>
+                <td style="border: 1px solid black"; colspan="5"><input type="email" class="dark" placeholder ="info@continental.pk" size="40%"></td>
+            </tr>
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Mobile No</td>
+                <td style="border: 1px solid black"; colspan="5"><input type="text" placeholder ="Enter your cell number " size="40%"></td>
+            </tr>
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Arrival Time</td>
+                <td style="border: 1px solid black"; colspan="5"><input type="text" placeholder ="Enter your arrival time " size="40%"></td>
+            </tr>
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Departure</td>
+                <td style="border: 1px solid black"; colspan="5"><input type="text" ><input type="text" ></td>
+            </tr>
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Room Type</td>
+                <td style="border: 1px solid black"; colspan="5"><label>
+                    <input type="radio" name="R" value="Single"> Single
+                  
+                    <input type="radio" name="R" value="Double"> Double
+                  
+                    <input type="radio" name="R" value="Presidential Suite"> Presidential Suite
+                  </label>
+                <br><br></td>
+            </tr>
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Preferences</td>
+                
+                <td style="border: 1px solid black"; colspan="5"><label>
+                    
+                    <input type="checkbox" name="x" value="Non-Smoking"> Non-Smoking
+                  </label>
+                  <label>
+                    <input type="checkbox" name="y" value="Internet"> Internet
+                  </label>
+                  <label>
+                    <input type="checkbox" name="z" value="Mattress"> Mattress
+                  </label>
+                <br><br>
+            </td>
+            </tr>
+            <tr >
+                <td style="border: 1px solid black"; colspan="4">Mode of Payment</td>
+                <td style="border: 1px solid black"; colspan="5"><label>
+                    <input type="checkbox" name="xx" value="Cash"> Cash
+                  </label>
+                  <label>
+                    <input type="checkbox" name="yy" value="Check"> Cheque
+                  </label>
+                  <label>
+                    <input type="checkbox" name="zz" value="Credit Card"> Credit Card
+                  </label>
+                  <br><br>
+                  <input list="options" name="option" id="option" placeholder="Select Card">
+                <datalist id="options">
+                    <option value="Cash">
+                        <option value="Credit Card">
+                            <option value="Cheque">
+                </datalist> <br> <br></td>
+            </tr>
+            
+            <tr> <td class="b" style="border: 1px solid black"; text-align: center; colspan="9" ><br><button>Send Data</button> <br> <br></td></tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
+
